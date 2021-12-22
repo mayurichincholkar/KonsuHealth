@@ -38,7 +38,7 @@ Feature: KonsuHealth Contact page in settings
     And I close driver instance
 
   Scenario Outline: Verify functionality for contact settings page with some blank fields with unchecked checkbox
-    When I am on profile settings page
+    When I am on contact settings page
     And I keep first name as "<first name>"
     And I keep last name as "<last name>"
     And I keep company as "<company>"
@@ -59,7 +59,7 @@ Feature: KonsuHealth Contact page in settings
       |              |             |   WebShar    |                                    |                    |                             |
 
   Scenario Outline: Verify functionality for contact settings page with some blank fields with checked checkbox
-    When I am on profile settings page
+    When I am on contact settings page
     And I keep first name as "<first name>"
     And I keep last name as "<last name>"
     And I keep company as "<company>"
@@ -80,7 +80,7 @@ Feature: KonsuHealth Contact page in settings
       |              |             |   WebShar    |                                    |                    |                             |
 
   Scenario: Verify functionality for contact settings page with all fields filled correctly with unchecked checkbox
-    When I am on profile settings page
+    When I am on contact settings page
     And I keep first name as "mayuri"
     And I keep last name as "chincholkar"
     And I keep company as "WebShar"
@@ -92,7 +92,7 @@ Feature: KonsuHealth Contact page in settings
     And I close driver instance
 
   Scenario: Verify functionality for contact settings page with all fields filled correctly with checked checkbox
-    When I am on profile settings page
+    When I am on contact settings page
     And I keep first name as "mayuri"
     And I keep last name as "chincholkar"
     And I keep company as "WebShar"

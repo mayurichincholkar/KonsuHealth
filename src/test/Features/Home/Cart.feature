@@ -14,3 +14,6 @@ Feature: konsuHealth Cart Page in settings
     And I redirected to shop page
     And I close driver instance
 
+
+
+
