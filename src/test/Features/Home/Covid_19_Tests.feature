@@ -13,7 +13,7 @@ Feature: konsuHealth COVID-19 Test Page in settings
     And I should see title 'At-Home COVID-19 PCR Test'
     And I close driver instance
 
-  Scenario: Verify functionality for COVID-19 Test settings page 'Register Test' button for At Home Saliva PCR Test
+  Scenario: Verify functionality for COVID-19 Test settings page 'Register Test' button for At Home Saliva PCR Testgit
     When I am on COVID-19 Test settings page
     And I click on Register Test button
     Then I should redirected to the test registration page
