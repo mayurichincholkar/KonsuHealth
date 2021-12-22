@@ -3,8 +3,10 @@ Feature: KonsuHealth Purchase_now page in settings
     Given I launch chrome browser
     When I visit home page
     And I click on COVID-19 Tests
-    Then I redirected to the COVID-19 Tests page
-    And I verify that 'COVID-19 Tests' title is present on pge
+    And I redirected to the COVID-19 Tests page
+    And I click on Purchase now button
+    Then I redirected to purchase now page
+    And I verify that 'At-Home COVID-19 PCR Test' title is present on pge
 
   Scenario: Verify functionality for Purchase now settings page for checkout button
     When I am on Purchase now settings page
