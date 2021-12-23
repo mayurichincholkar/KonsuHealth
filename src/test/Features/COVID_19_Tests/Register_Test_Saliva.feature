@@ -6,7 +6,7 @@ Feature: KonsuHealth Purchase_now page in settings
     And I redirected to the COVID-19 Tests page
     And I click on Register Test button for At Home Saliva PCR Test
     Then I redirected to register page
-    And I verify that 'Registration' title is present on pge
+    And I verify that 'Registration' title is present on page
 
   Scenario: Verify functionality for Register_Test_Saliva now settings page for Click here to login button
     When I am on Register_Test_Saliva settings page
