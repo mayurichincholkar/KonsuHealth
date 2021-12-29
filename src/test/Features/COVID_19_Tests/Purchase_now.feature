@@ -1,18 +1,18 @@
 Feature: KonsuHealth Purchase_now page in settings
-  Background: Visit the home page
+  Background: Login to the application
     Given I launch chrome browser
     When I visit home page
     And I click on COVID-19 Tests
-    And I redirected to the COVID-19 Tests page
+    And I should go to the COVID-19 Tests page
     And I click on Purchase now button
-    Then I redirected to purchase now page
+    Then I should on the purchase now page
     And I verify that 'At-Home COVID-19 PCR Test' title is present on pge
 
   Scenario: Verify functionality for Purchase now settings page for checkout button
     When I am on Purchase now settings page
     And I keep Purchase now dropdown as "1Test - $135"
     And I click on checkout button
-    Then I should redirected to Cart page
+    Then I should go to the Cart page
     And I verify that 'Cart' title is present on page
     And I close driver instance
 
@@ -25,5 +25,5 @@ Feature: KonsuHealth Purchase_now page in settings
   Scenario: Verify functionality for 'Unsure about how saliva tests compare to nasopharyngeal swabs? Read more here.' link
     When I am on Purchase now settings page
     And I click on here  from 'Unsure about how saliva tests compare to nasopharyngeal swabs? Read more here.'
-    Then I should redirected to Saliva or Nasopharyngeal Swab Specimens for Detection of SARS-CoV-2 page
+    Then I should go to the Saliva or Nasopharyngeal Swab Specimens for Detection of SARS-CoV-2 page
     And I close driver instance

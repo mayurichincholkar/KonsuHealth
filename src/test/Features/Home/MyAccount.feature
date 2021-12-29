@@ -4,7 +4,7 @@ Feature: konsuHealth MyAccount Page in settings
     When I visit home page
     Then I verify that KonsuHealth logo is present on pge
     And I click on MyAccount
-    And I redirected to the login page
+    And I should go to the login page
 
 
   Scenario: Verify functionality for login settings page for blank fields
