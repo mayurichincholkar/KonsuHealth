@@ -4,5 +4,5 @@ Feature: KonsuHealth About page in settings
     When I visit home page
     Then I verify that KonsuHealth logo is present on pge
     And I click on About
-    And I redirected to the About page
+    And I should go to the About page
 
